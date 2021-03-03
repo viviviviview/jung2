@@ -51,30 +51,20 @@ function clear () {
 OLED12864_I2C.init(60)
 clear()
 basic.forever(function () {
-    OLED12864_I2C.pixel(10, 25, 1)
-    OLED12864_I2C.pixel(10, 26, 1)
-    OLED12864_I2C.pixel(10, 27, 1)
-    OLED12864_I2C.pixel(10, 28, 1)
-    OLED12864_I2C.pixel(10, 29, 1)
-    OLED12864_I2C.pixel(10, 30, 1)
-    OLED12864_I2C.pixel(11, 25, 1)
-    OLED12864_I2C.pixel(11, 26, 1)
-    OLED12864_I2C.pixel(11, 27, 1)
-    OLED12864_I2C.pixel(11, 28, 1)
-    OLED12864_I2C.pixel(11, 29, 1)
-    OLED12864_I2C.pixel(11, 30, 1)
-    OLED12864_I2C.pixel(54, 25, 1)
-    OLED12864_I2C.pixel(54, 26, 1)
-    OLED12864_I2C.pixel(54, 27, 1)
-    OLED12864_I2C.pixel(54, 28, 1)
-    OLED12864_I2C.pixel(54, 29, 1)
-    OLED12864_I2C.pixel(54, 30, 1)
-    OLED12864_I2C.pixel(55, 25, 1)
-    OLED12864_I2C.pixel(55, 26, 1)
-    OLED12864_I2C.pixel(55, 27, 1)
-    OLED12864_I2C.pixel(55, 28, 1)
-    OLED12864_I2C.pixel(55, 29, 1)
-    OLED12864_I2C.pixel(55, 30, 1)
+    OLED12864_I2C.rect(
+    54,
+    25,
+    55,
+    30,
+    1
+    )
+    OLED12864_I2C.rect(
+    10,
+    25,
+    11,
+    30,
+    1
+    )
     OLED12864_I2C.rect(
     26,
     42,
@@ -138,7 +128,4 @@ basic.forever(function () {
     39,
     1
     )
-})
-basic.forever(function () {
-	
 })
