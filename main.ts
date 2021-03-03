@@ -5,56 +5,48 @@ function clear () {
     "    ",
     1
     )
-    basic.pause(100)
     OLED12864_I2C.showString(
     0,
     1,
     "      ",
     1
     )
-    basic.pause(100)
     OLED12864_I2C.showString(
     0,
     2,
     "       ",
     1
     )
-    basic.pause(100)
     OLED12864_I2C.showString(
     0,
     3,
     "      ",
     1
     )
-    basic.pause(100)
     OLED12864_I2C.showString(
     0,
     4,
     "      ",
     1
     )
-    basic.pause(100)
     OLED12864_I2C.showString(
     0,
     5,
     "       ",
     1
     )
-    basic.pause(100)
     OLED12864_I2C.showString(
     0,
     6,
     "     ",
     1
     )
-    basic.pause(100)
     OLED12864_I2C.showString(
     0,
     7,
     "     ",
     1
     )
-    basic.pause(100)
 }
 OLED12864_I2C.init(60)
 clear()
